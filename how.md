@@ -8,7 +8,7 @@
 - **unique** : every row shall have unique value .   
 
 
-# Overide save methode for to do act on saving before or after  : 
+# Overide save methode for to do act on saving before or after or extra validations before save : 
 ```
 from django.db import models
 
