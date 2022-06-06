@@ -9,7 +9,8 @@
 
 
 # Overide save methode for to do act on saving before or after  : 
-`from django.db import models
+```
+from django.db import models
 
 class Blog(models.Model):
     name = models.CharField(max_length=100)
@@ -19,5 +20,5 @@ class Blog(models.Model):
         do_something()
         super().save(*args, **kwargs)  # Call the "real" save() method.
         do_something_else()
-`
+```
 
