@@ -18,5 +18,6 @@ class Blog(models.Model):
     def save(self, *args, **kwargs):
         do_something()
         super().save(*args, **kwargs)  # Call the "real" save() method.
-        do_something_else()`
+        do_something_else()
+`
 
