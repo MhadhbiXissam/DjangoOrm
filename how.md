@@ -32,7 +32,12 @@ class Blog(models.Model):
 - **CharField** : list of chars has option max_length . 
 - **TextField** : for large text content . 
 - **DateField(auto_now=False, auto_now_add=False, ...)** : datetime field but it if you set default value it will be usefull for tracking time of creating (auto_now = True) and last modified  = auto_now_add = True ) , be carfull must always use Model.save() to have such utilty  . 
-- **DateTimeField(auto_now=False, auto_now_add=False, **options)**  : same as DateFiled . 
+- **DateTimeField(auto_now=False, auto_now_add=False, ..options..)**  : same as DateFiled . 
+- **DecimalField(max_digits=None, decimal_places=None, ...)** : for save excat decimal precession , max_digit  = max in number , dicaml places  = numbers of precession . 
+- **DurationField** : equivalent in python **timedelta** , can use bigint to count mill seconds . 
+- **EmailField** : a char field withy email validator . 
+- **TimeField** : same as **DateField** . 
+
 
 
 
