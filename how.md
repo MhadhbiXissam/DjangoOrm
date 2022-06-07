@@ -32,5 +32,45 @@ class Blog(models.Model):
 - **CharField** : list of chars has option max_length . 
 - **TextField** : for large text content . 
 - **DateField(auto_now=False, auto_now_add=False, ...)** : datetime field but it if you set default value it will be usefull for tracking time of creating (auto_now = True) and last modified  = auto_now_add = True ) , be carfull must always use Model.save() to have such utilty  . 
+- **DateTimeField(auto_now=False, auto_now_add=False, **options)**  : same as DateFiled . 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
