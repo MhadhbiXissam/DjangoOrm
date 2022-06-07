@@ -37,6 +37,8 @@ class Blog(models.Model):
 - **DurationField** : equivalent in python **timedelta** , can use bigint to count mill seconds . 
 - **EmailField** : a char field withy email validator . 
 - **TimeField** : same as **DateField** . 
+- ** FileField(upload_to='', storage=None, max_length=100, .. ) ** : A file-upload field , where upload_to = path relative to MEDIA_ROOT , storage is object responsible on storing the file file throu storage.save , see : `from django.core.files.storage import default_storage` . 
+-  
 
 
 
