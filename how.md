@@ -34,12 +34,14 @@ class Blog(models.Model):
 - **DateField(auto_now=False, auto_now_add=False, ...)** : datetime field but it if you set default value it will be usefull for tracking time of creating (auto_now = True) and last modified  = auto_now_add = True ) , be carfull must always use Model.save() to have such utilty  . 
 - **DateTimeField(auto_now=False, auto_now_add=False, ..options..)**  : same as DateFiled . 
 - **DecimalField(max_digits=None, decimal_places=None, ...)** : for save excat decimal precession , max_digit  = max in number , dicaml places  = numbers of precession . 
+- **FloatField** : represent the float python type . 
 - **DurationField** : equivalent in python **timedelta** , can use bigint to count mill seconds . 
 - **EmailField** : a char field withy email validator . 
 - **TimeField** : same as **DateField** . 
-- ** FileField(upload_to='', storage=None, max_length=100, .. ) ** : A file-upload field , where upload_to = path relative to MEDIA_ROOT , storage is object responsible on storing the file file throu storage.save , see : `from django.core.files.storage import default_storage` . 
--  
-
+- **FileField(upload_to='', storage=None, max_length=100, .. )** : A file-upload field , where upload_to = path relative to MEDIA_ROOT , storage is object responsible on storing the file file throu storage.save , see : `from django.core.files.storage import default_storage` . 
+- **GenericIPAddressField(protocol='both', unpack_ipv4=False,...)** : store string address of the ip . 
+- **ImageField(upload_to=None, height_field=None, width_field=None, max_length=100,....options)** : same as filefiled but has wdth and heigh attrs , used with pillow .
+- **JSONField(encoder=None, decoder=None, ...)** 🪗 s supported on MariaDB 10.2.7+, MySQL 5.7.8+, Oracle, PostgreSQL, and SQLite (with the JSON1 extension enabled).
 
 
 
