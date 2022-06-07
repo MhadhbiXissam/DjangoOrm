@@ -41,7 +41,7 @@ class Blog(models.Model):
 - **FileField(upload_to='', storage=None, max_length=100, .. )** : A file-upload field , where upload_to = path relative to MEDIA_ROOT , storage is object responsible on storing the file file throu storage.save , see : `from django.core.files.storage import default_storage` . 
 - **GenericIPAddressField(protocol='both', unpack_ipv4=False,...)** : store string address of the ip . 
 - **ImageField(upload_to=None, height_field=None, width_field=None, max_length=100,....options)** : same as filefiled but has wdth and heigh attrs , used with pillow .
-- **JSONField(encoder=None, decoder=None, ...)** 🪗 s supported on MariaDB 10.2.7+, MySQL 5.7.8+, Oracle, PostgreSQL, and SQLite (with the JSON1 extension enabled).
+- **JSONField(encoder=None, decoder=None, ...)** is supported on MariaDB 10.2.7+, MySQL 5.7.8+, Oracle, PostgreSQL, and SQLite (with the JSON1 extension enabled).
 
 
 
